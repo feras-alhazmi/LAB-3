@@ -21,7 +21,7 @@ public class Sorter {
             arr[i] = temp;
         }
     }
-    void insertionsort(int arr[])
+    static void insertionsort(int arr[])
 	{
 		int n = arr.length;
 		for (int i = 1; i < n; ++i) {
@@ -46,35 +46,27 @@ public class Sorter {
         System.out.println();
     }
 
-    // Driver code to test above
-
-    // Java program for implementation of Insertion Sort
-
-	/*Function to sort array using insertion sort*/
-	
-
-	/* A utility function to print array of size n*/
-	
-
-	// Driver method
-	
-
-
-
-/* This code is contributed by Rajat Mishra. */
-
+    
     public static void main(String args[]) {
         Sorter ob = new Sorter();
         int arr[] = { 64, 25, 12, 22, 11 };
-        ob.selectionSort(arr);
+        //ob.selectionSort(arr);
         System.out.println("Sorted array");
         ob.printArray(arr);
         int arr1[] = { 12, 11, 13, 5, 6 };
 
 		Sorter ob1 = new Sorter();
 		ob1.insertionsort(arr1);
+        sort(arr);
+        System.out.println("TEST");
+        printArray(arr);
 
 		printArray(arr1);
+
+
+    }
+    private static void sort(int [] arr) {
+        insertionsort(arr);
     }
 }
 /* This code is contributed by Rajat Mishra */
